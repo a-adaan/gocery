@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa";
+import ToggleSellerBtn from "./ToggleSellerBtn";
 
 export default function SellerPage() {
   const stats = [
@@ -11,8 +11,10 @@ export default function SellerPage() {
   ];
   return (
     <div className="relative">
-      <div className="bg-[url('/image/seller/hero.svg')] w-full h-[260px] lg:h-[426px] bg-cover z-0"></div>
-      <div className="relative lg:absolute bg-white w-full lg:rounded-ss-3xl lg:-t-5 lg:z-10">
+      <div className="relative bg-[url('/image/seller/hero.svg')] w-full h-[260px] lg:h-[426px] bg-cover z-0">
+        <div className="hidden lg:block absolute bottom-0 left-0 bg-white w-full h-10 rounded-t-3xl"></div>
+      </div>
+      <div className=" bg-white w-full">
         {/* Header Section */}
         <div className="container flex flex-col lg:flex-row items-start mt-[52px] justify-between gap-5 ">
           {/* Left Content */}
@@ -51,12 +53,7 @@ export default function SellerPage() {
                 ))}
               </div>
               <span className="ml-2">99+</span>
-              <Link
-                href={"/seller/123?section=rating"}
-                className="ml-2 text-green-600 font-medium"
-              >
-                • See All Reviews
-              </Link>
+              <ToggleSellerBtn />
             </div>
           </div>
           {/* Chat Button */}

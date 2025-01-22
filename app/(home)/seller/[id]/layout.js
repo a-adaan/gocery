@@ -7,7 +7,7 @@ export default function SellerLayout({ children, category, rating }) {
   return (
     <div>
       {children}
-      <div className="lg:mt-[480px]">
+      <div className="">
         {section === "category" && category}
         {section === "rating" && rating}
       </div>

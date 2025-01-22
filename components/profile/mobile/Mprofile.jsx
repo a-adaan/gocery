@@ -71,12 +71,16 @@ export default function Mprofile({ isProfileOpen, setProfileOpen }) {
               </Link>
             </li>
             <li>
-              <button className="flex items-center gap-3 text-text text-base">
+              <Link
+                href={"/address"}
+                onClick={setProfileOpen}
+                className="flex items-center gap-3 text-text text-base"
+              >
                 <span className="text-primary text-2xl">
                   <FaAddressBook />
                 </span>
                 Address
-              </button>
+              </Link>
             </li>
             <li>
               <Link

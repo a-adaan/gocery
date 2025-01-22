@@ -59,15 +59,15 @@ export default function ProfileDropdown({ btn, Modal, modalOpen, modalClose }) {
             </Link>
           </li>
           <li>
-            <button
-              onClick={() => handleOpenModal("EditAddress")}
+            <Link
+              href={"/address"}
               className="flex items-center gap-3 text-text text-base"
             >
               <span className="text-primary text-2xl">
                 <FaAddressBook />
               </span>
               Address
-            </button>
+            </Link>
           </li>
           <li>
             <Link

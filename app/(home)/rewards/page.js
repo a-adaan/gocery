@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Rewards() {
   return (
@@ -28,7 +29,12 @@ export default function Rewards() {
 
           {/* Time Info */}
           <div className="text-right">
-            <p className="text-sm font-normal text-primary">View</p>
+            <Link
+              href={"/rewards/123"}
+              className="text-sm font-normal text-primary"
+            >
+              View
+            </Link>
           </div>
         </div>
       </div>
